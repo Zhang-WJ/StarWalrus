@@ -1,9 +1,8 @@
-package source.ui;
+package ui;
 
 import AssetPaths;
 import Reg;
 import flixel.FlxG;
-import flixel.FlxGame;
 import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.effects.FlxFlicker;
