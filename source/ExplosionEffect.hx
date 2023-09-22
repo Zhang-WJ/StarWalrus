@@ -29,7 +29,7 @@ class ExplosionEffect extends FlxGroup
 	{
 		super();
 
-		texturePackerData = FlxAtlasFrames.fromTexturePackerJson("assets/images/ingameSprites.png", "assets/data/ingameSprites.josn");
+		texturePackerData = FlxAtlasFrames.fromTexturePackerJson(AssetPaths.ingameSprites__png, AssetPaths.ingameSprites__json);
 		explosionLine = new FlxSprite();
 		explosionLine.frames = texturePackerData;
 		explosionLine.animation.frameName = "explosionLine.png";

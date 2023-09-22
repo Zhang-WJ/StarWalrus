@@ -1,5 +1,6 @@
 package;
 
+import AssetPaths;
 import flixel.FlxSprite;
 import flixel.graphics.frames.FlxAtlasFrames;
 
@@ -12,7 +13,7 @@ class Projectile extends FlxSprite
 	{
 		super();
 
-		texturePackerData = FlxAtlasFrames.fromTexturePackerJson("assets/images/ingameSprites.png", "assets/data/ingameSprites.json");
+		texturePackerData = FlxAtlasFrames.fromTexturePackerJson(AssetPaths.ingameSprites__png, AssetPaths.ingameSprites__json);
 		this.frames = texturePackerData;
 		this.animation.frameName = "projectile.png";
 		this.velocity.x = speed;

@@ -25,7 +25,7 @@ class Enemy extends FlxSprite
 	public function new()
 	{
 		super();
-		texturePackerData = FlxAtlasFrames.fromTexturePackerJson("assets/images/ingameSprites.png", "assets/data/ingameSprites.json");
+		texturePackerData = FlxAtlasFrames.fromTexturePackerJson(AssetPaths.ingameSprites__png, AssetPaths.ingameSprites__json);
 		this.frames = texturePackerData;
 		var names = [];
 		for (i in 0...2)

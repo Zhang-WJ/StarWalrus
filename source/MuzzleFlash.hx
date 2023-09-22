@@ -1,5 +1,6 @@
 package;
 
+import AssetPaths;
 import flixel.FlxSprite;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.group.FlxGroup;
@@ -20,7 +21,7 @@ class MuzzleFlash extends FlxGroup
 	public function new()
 	{
 		super();
-		texturePackerData = FlxAtlasFrames.fromTexturePackerJson("assets/images/ingameSprites.png", "assets/data/ingameSprites.josn");
+		texturePackerData = FlxAtlasFrames.fromTexturePackerJson(AssetPaths.ingameSprites__png, AssetPaths.ingameSprites__json);
 		flash = new FlxSprite();
 		flash.frames = texturePackerData;
 		flash.animation.frameName = "muzzlaFlash.png";
